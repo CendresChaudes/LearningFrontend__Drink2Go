@@ -8,22 +8,41 @@ $color-default-white: #ffffff;
 $color-transparent: rgba(255, 255, 255, 0);
 
 // Project-palette
-// Для нейминга используется https://www.htmlcsscolor.com/hex/63D1BB
 
-//! $color-alice-blue: #f7fafc;
+// Base
+
+$color-base-black: #333333;
+$color-base-grey: #bdbdbd;
+$color-base-primary: #7859cf;
+$color-base-secondary: #f0ebff;
+
+// Alt
+
+$color-alt-primary-opacity: rgba(120, 89, 207, 0.25);
+$color-alt-primary-lighter: #9070ec;
+$color-alt-primary-darker: #593cac;
+$color-alt-light-grey: #e2e2e2;
+
+// Background
+
+$color-background-lightest-grey: #f8f8f8;
+$color-background-flat-white: #f3ebe1;
+$color-background-lavender-latte: #eae6fc;
+$color-background-espresso: #e5e6e8;
 
 // Typography
 //----------------------------------------------------------------------------
 
 // Sizes
 
-$fz-default: 16px;
+$fz-default: 14px;
 
 // Fonts
 
-//! $ff-montserrat: "Montserrat", sans-serif;
+$ff-montserrat: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 // Viewports
 //----------------------------------------------------------------------------
 
-//! $vp-1250: 1250px;
+$vp-768: 768px;
+$vp-1440: 1440px;
