@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-style: normal;
+  font-weight: 400;
+  font-size: $fz-default;
+  //! line-height: 1.4;
+  //! font-family: $ff-montserrat;
+  //! color: $color-sapphire;
+  letter-spacing: normal;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  //! background-color: $color-seashell;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+
+  object-fit: cover;
+}
