@@ -1,0 +1,21 @@
+.map {
+  height: 420px;
+  width: 100%;
+
+  @media (min-width: $vp-768) {
+    height: 480px;
+  }
+
+  @media (min-width: $vp-1400) {
+    height: 540px;
+  }
+}
+
+.no-js .map__fallback {
+  display: block;
+}
+
+.map__fallback {
+  display: none;
+  width: 100%;
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Drink2Go: главная страница</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -377,15 +378,15 @@
         </div>
       </section>
 
-      <section class="map" id="map">
-        <h2 class="visually-hidden">Карта расположения магазина по адресу: Санкт-Петербург, набережная реки Карповки, дом 5</h2>
+      <section class="map no-js" id="map">
+        <h2 class="visually-hidden">Карта расположения магазина.</h2>
         <picture>
           <source type="image/webp" media="(min-width: 1400px)" srcset="img/content/map/map-desktop.webp 1x, img/content/map/map-desktop@2x.webp 2x" width="1400" height="540">
           <source type="image/webp" media="(min-width: 768px)" srcset="img/content/map/map-tablet.webp 1x, img/content/map/map-tablet@2x.webp 2x" width="768" height="480">
           <source type="image/webp" srcset="img/content/map/map-mobile.webp, img/content/map/map-mobile@2x.webp 2x" width="1400" height="540">
           <source media="(min-width: 1400px)" srcset="img/content/map/map-desktop.jpg 1x, img/content/map/map-desktop@2x.jpg 2x" width="600" height="600">
           <source media="(min-width: 768px)" srcset="img/content/map/map-tablet.jpg 1x, img/content/map/map-tablet@2x.jpg 2x" width="768" height="480">
-          <img class="map__fallback" src="img/content/map/map-mobile.jpg" srcset="img/content/map/map-mobile@2x.jpg 2x" width="320" height="420" alt="Банка с кофе Тройной Эспрессо.">
+          <img class="map__fallback" src="img/content/map/map-mobile.jpg" srcset="img/content/map/map-mobile@2x.jpg 2x" width="320" height="420" alt="Адрес магазина: Санкт-Петербург, набережная реки Карповки, дом 5.">
         </picture>
       </section>
     </main>
@@ -489,6 +490,7 @@
       </div>
     </footer>
 
-    <script src="js/main.js" defer></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="js/main.js" type="module"></script>
   </body>
 </html>

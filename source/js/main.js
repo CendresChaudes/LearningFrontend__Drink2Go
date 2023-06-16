@@ -1,1 +1,3 @@
-/* в этот файл добавляет скрипты*/
+import { initMapModule } from '../js/modules/map.js';
+
+initMapModule();
