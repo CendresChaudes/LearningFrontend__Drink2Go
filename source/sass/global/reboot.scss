@@ -14,18 +14,14 @@ body {
 html {
   font-style: normal;
   font-weight: 400;
-  font-size: $fz-default;
-  //! line-height: 1.4;
-  //! font-family: $ff-montserrat;
-  //! color: $color-sapphire;
+  font-family: $ff-montserrat;
+  color: $color-base-black;
   letter-spacing: normal;
 }
 
 body {
   display: flex;
   flex-direction: column;
-
-  //! background-color: $color-seashell;
 }
 
 a {
