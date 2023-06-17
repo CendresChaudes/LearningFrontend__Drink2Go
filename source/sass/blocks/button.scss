@@ -7,6 +7,7 @@
 
   border: none;
   border-radius: 4px;
+  cursor: pointer;
 
   &--primary {
     background-color: $color-base-primary;
@@ -44,20 +45,28 @@
   }
 
   &--disabled {
+    color: $color-default-white;
+
     background-color: $color-base-grey;
   }
 
   @media (hover: hover) {
     &:hover {
+      color: $color-default-white;
+
       background-color: $color-alt-primary-lighter;
     }
   }
 
   &:focus {
+    color: $color-default-white;
+
     background-color: $color-alt-primary-lighter;
   }
 
   &:active {
+    color: $color-default-white;
+
     background-color: $color-alt-primary-darker;
   }
 }

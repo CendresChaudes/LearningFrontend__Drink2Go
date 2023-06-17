@@ -10,8 +10,6 @@ const onSortTypeChange = (evt) => {
   const sortTypeId = evt.target.id
   const sortTypeLabelText = sortList.querySelector(`[for="${sortTypeId}"]`).textContent;
   sortControl.innerText = sortTypeLabelText;
-
-  closeSort();
 }
 
 const onDocumentEscKeydown = (evt) => {

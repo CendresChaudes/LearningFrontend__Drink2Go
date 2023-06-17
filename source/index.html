@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Drink2Go: главная страница</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -130,7 +130,7 @@
               <span class="visually-hidden">Предыдущий слайд.</span>
             </button>
             <button class="slider__button slider__button--next">
-              <svg aria-hidden="true" focusable="false" width="11" height="20" viewBox="0 0 11 20" fill="#7859cf" transform ="rotate(180)">
+              <svg class="rotate" aria-hidden="true" focusable="false" width="11" height="20" viewBox="0 0 11 20" fill="#7859cf">
                 <use xlink:href="img/icons/stack.svg#arrow-thin"></use>
               </svg>
               <span class="visually-hidden">Следующий слайд.</span>
@@ -269,9 +269,9 @@
               <button class="filter__submit button button--secondary" type="reset">Сбросить</button>
             </div>
           </form>
-        </div>
-        <div class="sort__container">
-          <div class="catalog__sort sort no-js">
+        </div>:
+        <div class="catalog__sort sort no-js">
+          <div class="catalog__container">
             <span class="sort__text">Сортировка:</span>
             <div class="sort__control-wrapper">
               <button class="sort__control" type="button">По умолчанию</button>
@@ -395,31 +395,33 @@
               </div>
             </li>
           </ul>
-          <div class="catalog__pagination-wrapper">
-            <a class="catalog__pagination-button catalog__pagination-button--prev" href="#">
-              <svg aria-hidden="true" focusable="false" width="6" height="10" viewBox="0 0 6 10" fill="#7859cf">
-                <use xlink:href="img/icons/stack.svg#arrow-thick"></use>
-              </svg>
-              <span class="catalog__pagination-button-text">Назад</span>
-            </a>
-            <ul class="catalog__pagination-list">
-              <li class="catalog__pagination-item">
-                <a class="catalog__pagination-link" href="#">1</a>
-              </li>
-              <li class="catalog__pagination-item">
-                <a class="catalog__pagination-link" title="Текущая страница">2</a>
-              </li>
-              <li class="catalog__pagination-item">
-                <a class="catalog__pagination-link" href="#">3</a>
-              </li>
-            </ul>
-            <a class="catalog__pagination-button catalog__pagination-button--next" href="#">
-              <svg aria-hidden="true" focusable="false" width="6" height="10" viewBox="0 0 6 10" fill="#7859cf" transform ="rotate(180)">
-                <use xlink:href="img/icons/stack.svg#arrow-thick"></use>
-              </svg>
-              <span class="catalog__pagination-button-text">Вперёд</span>
-            </a>
-          </div>
+          <ul class="catalog__pagination pagination">
+            <li class="pagination__item">
+              <a class="pagination__link pagination__link--arrow" id="prev-button" href="#">
+                <svg aria-hidden="true" focusable="false" width="6" height="10" viewBox="0 0 6 10" fill="#7859cf">
+                  <use xlink:href="img/icons/stack.svg#arrow-thick"></use>
+                </svg>
+                <span class="pagination__arrow-text">Назад</span>
+              </a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">1</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link pagination__link--current" href="#" title="Текущая страница">2</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#">3</a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link pagination__link--arrow" id="next-button" href="#">
+                <svg class="rotate" aria-hidden="true" focusable="false" width="6" height="10" viewBox="0 0 6 10" fill="#7859cf">
+                  <use xlink:href="img/icons/stack.svg#arrow-thick"></use>
+                </svg>
+                <span class="pagination__arrow-text">Вперёд</span>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -511,7 +513,7 @@
               <address class="footer__address">
                 <a
                   class="footer__address-link footer__address-link--location"
-                  href="https://yandex.ru/maps/2/saint-petersburg/house/naberezhnaya_reki_karpovki_5/Z0kYdQZmS0IFQFtjfXV3eX1gYw==/?ll=30.316272%2C59.968137&z=16.64"4
+                  href="https://yandex.ru/maps/2/saint-petersburg/house/naberezhnaya_reki_karpovki_5/Z0kYdQZmS0IFQFtjfXV3eX1gYw==/?ll=30.316272%2C59.968137&z=16.64"
                   >
                   <span class="footer__address-text">Санкт-Петербург, набережная реки Карповки, дом 5</span>
                 </a>

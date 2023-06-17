@@ -102,26 +102,24 @@
   @media (hover: hover) {
     &:hover {
       background-color: $color-base-secondary;
+
+      & svg {
+        fill: $color-base-primary;
+      }
     }
   }
 
   &:focus {
     background-color: $color-base-secondary;
+
+    & svg {
+      fill: $color-base-primary;
+    }
   }
 
   &:active {
     background-color: $color-alt-primary-opacity;
   }
-}
-
-@media (hover: hover) {
-  .footer__social-link:hover svg {
-    fill: $color-base-primary;
-  }
-}
-
-.footer__social-link:focus svg {
-  fill: $color-base-primary;
 }
 
 .footer__main {
@@ -278,6 +276,10 @@
 }
 
 .footer__footer-link {
+  & svg {
+    vertical-align: middle;
+  }
+
   @media (hover: hover) {
     &:hover {
       color: $color-base-primary;
@@ -290,9 +292,5 @@
 
   &:active {
     color: $color-alt-primary-darker;
-  }
-
-  & svg {
-    vertical-align: middle;
   }
 }

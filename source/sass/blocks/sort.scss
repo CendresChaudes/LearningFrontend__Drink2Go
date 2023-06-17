@@ -125,8 +125,10 @@
   }
 }
 
-.sort__input:checked + .sort__label {
-  color: $color-default-white;
+.sort__input {
+  &:checked + .sort__label {
+    color: $color-default-white;
 
-  background-color: $color-base-primary;
+    background-color: $color-base-primary;
+  }
 }
