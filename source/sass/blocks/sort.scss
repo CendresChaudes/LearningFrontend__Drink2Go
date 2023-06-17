@@ -1,0 +1,123 @@
+.sort {
+  position: relative;
+
+  padding: 0 0 0 10px;
+
+  @media (min-width: $vp-390) {
+    padding: 0 20px;
+  }
+}
+
+.no-js .sort__text {
+  display: inline-block;
+  padding: 4px 0 0 0;
+
+  vertical-align: top;
+}
+
+.sort__text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+
+  @media (min-width: $vp-390) {
+    margin: 0 10px 0 0;
+  }
+}
+
+.sort__control-wrapper {
+  display: inline-block;
+}
+
+.is-open .sort__control::after {
+  transform: translateY(-50%) rotate(90deg);
+}
+
+.sort__control {
+  position: relative;
+
+  padding: 4px 30px 4px 10px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $color-base-primary;
+  text-transform: lowercase;
+
+  background-color: $color-transparent;
+  border: none;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: calc(50% + 1px);
+    right: 10px;
+
+    width: 6px;
+    height: 10px;
+
+    background-image: url("../../img/icons/stack.svg#arrow-thick");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 6px 10px;
+    transform: translateY(-50%) rotate(-90deg);
+
+    transition: all 300ms ease-out;
+  }
+}
+
+.no-js .sort__list {
+  position: static;
+
+  display: block;
+}
+
+.is-open .sort__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.sort__list {
+  position: absolute;
+
+  display: none;
+  margin: 10px 0 0 0;
+  padding: 0;
+
+  list-style: none;
+
+  background-color: $color-transparent;
+  border-radius: 4px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.sort__item {
+  min-width: 190px;
+
+  &:first-child .sort__label {
+    border-radius: 4px 4px 0 0;
+  }
+
+  &:last-child .sort__label {
+    border-radius: 0 0 4px 4px;
+  }
+}
+
+.sort__label {
+  display: block;
+  width: 100%;
+  padding: 8px 18px;
+
+  font-size: 16px;
+  line-height: 1.50;
+  text-transform: lowercase;
+
+  background-color: $color-default-white;
+}
+
+.sort__input:checked + .sort__label {
+  color: $color-default-white;
+
+  background-color: $color-base-primary;
+}

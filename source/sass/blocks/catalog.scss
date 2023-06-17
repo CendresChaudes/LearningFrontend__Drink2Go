@@ -1,0 +1,27 @@
+.catalog {
+  padding: 50px 0 44px 0;
+
+  background-color: $color-background-lightest-grey;
+
+  @media (min-width: $vp-768) {
+    padding: 80px 0 90px 0;
+  }
+
+  @media (min-width: $vp-1400) {
+    padding: 100px 0 120px 0;
+  }
+}
+
+.catalog__badge {
+  display: block;
+
+  text-align: center;
+}
+
+.catalog__title {
+  text-align: center;
+}
+
+.catalog__sort {
+  margin: 0 0 20px 0;
+}
