@@ -80,7 +80,7 @@
               <div class="slider__order-wrapper">
                 <span class="slider__old-price">295₽</span>
                 <span class="slider__new-price">225₽</span>
-                <a class="slider__button button" href="#">Заказать</a>
+                <a class="slider__button button button--primary" href="#">Заказать</a>
               </div>
             </li>
             <li class="slider__item swiper-slide">
@@ -99,7 +99,7 @@
               <div class="slider__order-wrapper">
                 <span class="slider__old-price">285₽</span>
                 <span class="slider__new-price">265₽</span>
-                <a class="slider__button button" href="#">Заказать</a>
+                <a class="slider__button button button--primary" href="#">Заказать</a>
               </div>
             </li>
             <li class="slider__item swiper-slide">
@@ -270,102 +270,128 @@
             </div>
           </form>
         </div>
-        <div class="catalog__sort sort no-js">
-          <span class="sort__text">Сортировка:</span>
-          <div class="sort__control-wrapper">
-            <button class="sort__control" type="button">По умолчанию</button>
-            <ul class="sort__list">
-              <li class="sort__item">
-                <input class="sort__input visually-hidden" id="sort-default" type="radio" name="sort" value="default" checked>
-                <label class="sort__label" for="sort-default">По умолчанию</label>
-              </li>
-              <li class="sort__item">
-                <input class="sort__input visually-hidden" id="sort-expensive" type="radio" name="sort" value="expensive" >
-                <label class="sort__label" for="sort-expensive">Сначала дорогие</label>
-              </li>
-              <li class="sort__item">
-                <input class="sort__input visually-hidden" id="sort-cheap" type="radio" name="sort" value="cheap" >
-                <label class="sort__label" for="sort-cheap">Сначала дешёвые</label>
-              </li>
-              <li class="sort__item">
-                <input class="sort__input visually-hidden" id="sort-popular" type="radio" name="sort" value="popular" >
-                <label class="sort__label" for="sort-popular">Высокий рейтинг</label>
-              </li>
-            </ul>
+        <div class="sort__container">
+          <div class="catalog__sort sort no-js">
+            <span class="sort__text">Сортировка:</span>
+            <div class="sort__control-wrapper">
+              <button class="sort__control" type="button">По умолчанию</button>
+              <ul class="sort__list">
+                <li class="sort__item">
+                  <input class="sort__input visually-hidden" id="sort-default" type="radio" name="sort" value="default" checked>
+                  <label class="sort__label" for="sort-default">По умолчанию</label>
+                </li>
+                <li class="sort__item">
+                  <input class="sort__input visually-hidden" id="sort-expensive" type="radio" name="sort" value="expensive" >
+                  <label class="sort__label" for="sort-expensive">Сначала дорогие</label>
+                </li>
+                <li class="sort__item">
+                  <input class="sort__input visually-hidden" id="sort-cheap" type="radio" name="sort" value="cheap" >
+                  <label class="sort__label" for="sort-cheap">Сначала дешёвые</label>
+                </li>
+                <li class="sort__item">
+                  <input class="sort__input visually-hidden" id="sort-popular" type="radio" name="sort" value="popular" >
+                  <label class="sort__label" for="sort-popular">Высокий рейтинг</label>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="container">
           <ul class="catalog__card-list">
             <li class="catalog__card-item">
-              <picture>
-                <source type="image/webp" srcset="img/content/catalog/coffee-can-1.webp, img/content/catalog/coffee-can-1@2x.webp 2x" width="130" height="188">
-                <img class="catalog__card-img" src="img/content/catalog/coffee-can-1.png" srcset="img/content/catalog/coffee-can-1@2x.png 2x" width="130" height="188" alt="Банка с кофе Декаф Флэт Уайт.">
-              </picture>
-              <h3 class="catalog__card-name">Декаф Флэт Уайт</h3>
+              <a class="catalog__card-link" href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/content/catalog/coffee-can-1.webp, img/content/catalog/coffee-can-1@2x.webp 2x" width="130" height="188">
+                  <img class="catalog__card-img" src="img/content/catalog/coffee-can-1.png" srcset="img/content/catalog/coffee-can-1@2x.png 2x" width="130" height="188" alt="Банка с кофе Декаф Флэт Уайт.">
+                </picture>
+              </a>
+              <a class="catalog__card-link" href="#">
+                <h3 class="catalog__card-name">Декаф Флэт Уайт</h3>
+              </a>
               <p class="catalog__card-description">Кофе без кофеина из&nbsp;Эфиопии с&nbsp;натуральным фермерским молоком</p>
               <div class="catalog__order-wrapper">
                 <span class="catalog__card-price">225₽</span>
-                <a class="catalog__card-button" href="#">В корзину</a>
+                <a class="catalog__card-button button button--primary button--catalog" href="#">В корзину</a>
               </div>
             </li>
             <li class="catalog__card-item">
-              <picture>
-                <source type="image/webp" srcset="img/content/catalog/coffee-can-2.webp, img/content/catalog/coffee-can-2@2x.webp 2x" width="130" height="188">
-                <img class="catalog__card-img" src="img/content/catalog/coffee-can-2.png" srcset="img/content/catalog/coffee-can-2@2x.png 2x" width="130" height="188" alt="Банка с кофе Декаф Флэт Уайт.">
-              </picture>
-              <h3 class="catalog__card-name">Декаф Флэт Уайт</h3>
+              <a class="catalog__card-link" href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/content/catalog/coffee-can-2.webp, img/content/catalog/coffee-can-2@2x.webp 2x" width="130" height="188">
+                  <img class="catalog__card-img" src="img/content/catalog/coffee-can-2.png" srcset="img/content/catalog/coffee-can-2@2x.png 2x" width="130" height="188" alt="Банка с кофе Декаф Флэт Уайт.">
+                </picture>
+              </a>
+              <a class="catalog__card-link" href="#">
+                <h3 class="catalog__card-name">Декаф Флэт Уайт</h3>
+              </a>
               <p class="catalog__card-description">Кофе без кофеина из&nbsp;Эфиопии с&nbsp;натуральным фермерским молоком</p>
               <div class="catalog__order-wrapper">
                 <span class="catalog__card-price">225₽</span>
-                <a class="catalog__card-button" href="#">В корзину</a>
+                <a class="catalog__card-button button button--primary button--catalog" href="#">В корзину</a>
               </div>
             </li>
             <li class="catalog__card-item">
-              <picture>
-                <source type="image/webp" srcset="img/content/catalog/coffee-can-3.webp, img/content/catalog/coffee-can-3@2x.webp 2x" width="130" height="188">
-                <img class="catalog__card-img" src="img/content/catalog/coffee-can-3.png" srcset="img/content/catalog/coffee-can-3@2x.png 2x" width="130" height="188" alt="Банка с кофе Декаф Флэт Уайт.">
-              </picture>
-              <h3 class="catalog__card-name">Декаф Флэт Уайт</h3>
+              <a class="catalog__card-link" href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/content/catalog/coffee-can-3.webp, img/content/catalog/coffee-can-3@2x.webp 2x" width="130" height="188">
+                  <img class="catalog__card-img" src="img/content/catalog/coffee-can-3.png" srcset="img/content/catalog/coffee-can-3@2x.png 2x" width="130" height="188" alt="Банка с кофе Декаф Флэт Уайт.">
+                </picture>
+              </a>
+              <a class="catalog__card-link" href="#">
+                <h3 class="catalog__card-name">Декаф Флэт Уайт</h3>
+              </a>
               <p class="catalog__card-description">Кофе без кофеина из&nbsp;Эфиопии с&nbsp;натуральным фермерским молоком</p>
               <div class="catalog__order-wrapper">
                 <span class="catalog__card-price">225₽</span>
-                <a class="catalog__card-button" href="#">В корзину</a>
+                <a class="catalog__card-button button button--primary button--catalog" href="#">В корзину</a>
               </div>
             </li>
             <li class="catalog__card-item">
-              <picture>
-                <source type="image/webp" srcset="img/content/catalog/coffee-can-4.webp, img/content/catalog/coffee-can-4@2x.webp 2x" width="130" height="188">
-                <img class="catalog__card-img" src="img/content/catalog/coffee-can-4.png" srcset="img/content/catalog/coffee-can-4@2x.png 2x" width="130" height="188" alt="Банка с кофе Декаф Флэт Уайт.">
-              </picture>
-              <h3 class="catalog__card-name">Декаф Флэт Уайт</h3>
+              <a class="catalog__card-link" href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/content/catalog/coffee-can-4.webp, img/content/catalog/coffee-can-4@2x.webp 2x" width="130" height="188">
+                  <img class="catalog__card-img" src="img/content/catalog/coffee-can-4.png" srcset="img/content/catalog/coffee-can-4@2x.png 2x" width="130" height="188" alt="Банка с кофе Декаф Флэт Уайт.">
+                </picture>
+              </a>
+              <a class="catalog__card-link" href="#">
+                <h3 class="catalog__card-name">Декаф Флэт Уайт</h3>
+              </a>
               <p class="catalog__card-description">Кофе без кофеина из&nbsp;Эфиопии с&nbsp;натуральным фермерским молоком</p>
               <div class="catalog__order-wrapper">
                 <span class="catalog__card-price">225₽</span>
-                <a class="catalog__card-button" href="#">В корзину</a>
+                <a class="catalog__card-button button button--primary button--catalog" href="#">В корзину</a>
               </div>
             </li>
             <li class="catalog__card-item">
-              <picture>
-                <source type="image/webp" srcset="img/content/catalog/coffee-can-5.webp, img/content/catalog/coffee-can-5@2x.webp 2x" width="130" height="188">
-                <img class="catalog__card-img" src="img/content/catalog/coffee-can-5.png" srcset="img/content/catalog/coffee-can-5@2x.png 2x" width="130" height="188" alt="Банка с кофе Декаф Флэт Уайт.">
-              </picture>
-              <h3 class="catalog__card-name">Декаф Флэт Уайт</h3>
+              <a class="catalog__card-link" href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/content/catalog/coffee-can-5.webp, img/content/catalog/coffee-can-5@2x.webp 2x" width="130" height="188">
+                  <img class="catalog__card-img" src="img/content/catalog/coffee-can-5.png" srcset="img/content/catalog/coffee-can-5@2x.png 2x" width="130" height="188" alt="Банка с кофе Декаф Флэт Уайт.">
+                </picture>
+              </a>
+              <a class="catalog__card-link" href="#">
+                <h3 class="catalog__card-name">Декаф Флэт Уайт</h3>
+              </a>
               <p class="catalog__card-description">Кофе без кофеина из&nbsp;Эфиопии с&nbsp;натуральным фермерским молоком</p>
               <div class="catalog__order-wrapper">
                 <span class="catalog__card-price">225₽</span>
-                <a class="catalog__card-button" href="#">В корзину</a>
+                <a class="catalog__card-button button button--primary button--catalog" href="#">В корзину</a>
               </div>
             </li>
             <li class="catalog__card-item">
-              <picture>
-                <source type="image/webp" srcset="img/content/catalog/coffee-can-6.webp, img/content/catalog/coffee-can-6@2x.webp 2x" width="130" height="188">
-                <img class="catalog__card-img" src="img/content/catalog/coffee-can-6.png" srcset="img/content/catalog/coffee-can-6@2x.png 2x" width="130" height="188" alt="Банка с кофе Декаф Флэт Уайт.">
-              </picture>
-              <h3 class="catalog__card-name">Декаф Флэт Уайт</h3>
+              <a class="catalog__card-link" href="#">
+                <picture>
+                  <source type="image/webp" srcset="img/content/catalog/coffee-can-6.webp, img/content/catalog/coffee-can-6@2x.webp 2x" width="130" height="188">
+                  <img class="catalog__card-img" src="img/content/catalog/coffee-can-6.png" srcset="img/content/catalog/coffee-can-6@2x.png 2x" width="130" height="188" alt="Банка с кофе Декаф Флэт Уайт.">
+                </picture>
+              </a>
+              <a class="catalog__card-link" href="#">
+                <h3 class="catalog__card-name">Декаф Флэт Уайт</h3>
+              </a>
               <p class="catalog__card-description">Кофе без кофеина из&nbsp;Эфиопии с&nbsp;натуральным фермерским молоком</p>
               <div class="catalog__order-wrapper">
                 <span class="catalog__card-price">225₽</span>
-                <a class="catalog__card-button" href="#">В корзину</a>
+                <a class="catalog__card-button button button--primary button--catalog" href="#">В корзину</a>
               </div>
             </li>
           </ul>

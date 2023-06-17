@@ -1,6 +1,8 @@
 .sort {
   position: relative;
+}
 
+.sort__container {
   padding: 0 0 0 10px;
 
   @media (min-width: $vp-390) {
@@ -114,6 +116,13 @@
   text-transform: lowercase;
 
   background-color: $color-default-white;
+  cursor: pointer;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: $color-base-secondary;
+    }
+  }
 }
 
 .sort__input:checked + .sort__label {
