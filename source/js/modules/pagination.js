@@ -6,9 +6,15 @@ const prevButton = document.querySelector('#prev-button');
 const pageCount = pageNumberButtons.length;
 let currentPageNumber = 2;
 
-const disableButton = (button) => button.style.display = 'none';
+const disableButton = (button) => {
+  button.classList.add('pagination__link--disabled');
+  button.tabIndex = -1;
+};
 
-const activateButton = (button) => button.removeAttribute('style');
+const activateButton = (button) => {
+  button.classList.remove('pagination__link--disabled');
+  button.removeAttribute('tabIndex');
+};
 
 const checkArrowButtonStatus = () => {
   currentPageNumber === 1 ? disableButton(prevButton) : activateButton(prevButton);
@@ -18,10 +24,12 @@ const checkArrowButtonStatus = () => {
 const activateCurrentPageButton = () => {
   pageNumberButtons.forEach((button) => {
     button.classList.remove('pagination__link--current');
+    button.removeAttribute('tabIndex');
     const pageIndex = Number(button.textContent);
 
     if (pageIndex == currentPageNumber) {
       button.classList.add('pagination__link--current');
+      button.tabIndex = -1;
     }
   });
 };
@@ -44,7 +52,15 @@ const onPaginationButtonClick = (evt) => {
   }
 
   if (evt.target.closest('.pagination__link--arrow')) {
-    evt.currentTarget.id === 'prev-button' ? setCurrentPage(currentPageNumber - 1) : setCurrentPage(currentPageNumber + 1)
+    if (evt.currentTarget.id === 'prev-button' && currentPageNumber > 1) {
+      setCurrentPage(currentPageNumber - 1);
+
+      return
+    }
+
+    if (evt.currentTarget.id === 'next-button' && currentPageNumber < pageCount) {
+      setCurrentPage(currentPageNumber + 1);
+    }
   }
 }
 
