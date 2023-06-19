@@ -16,8 +16,6 @@
 .pagination__item {
   display: flex;
   min-width: 40px;
-
-  border-radius: 4px;
 }
 
 .pagination__link {
@@ -31,6 +29,31 @@
   color: $color-base-primary;
 
   background-color: $color-default-white;
+  border-radius: 4px;
+
+  @media (hover: hover) {
+    &:hover {
+      color: $color-default-white;
+
+      background-color: $color-alt-primary-lighter;
+
+      & svg {
+        fill: $color-default-white;
+      }
+    }
+  }
+
+  &:focus {
+    background-color: $color-alt-primary-lighter;
+
+    & svg {
+      fill: $color-default-white;
+    }
+  }
+
+  &:active {
+    background-color: $color-alt-primary-darker;
+  }
 
   &--current {
     font-weight: 600;
@@ -38,6 +61,22 @@
 
     background-color: $color-transparent;
     cursor: auto;
+
+    pointer-events: none;
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: $color-transparent;
+      }
+    }
+
+    &:focus {
+      background-color: $color-transparent;
+    }
+
+    &:active {
+      background-color: $color-transparent;
+    }
   }
 
   &--arrow {
@@ -47,6 +86,39 @@
 
     & svg {
       @media (min-width: $vp-768) {
+        display: none;
+      }
+    }
+  }
+
+  &--disabled {
+    font-weight: 400;
+    color: $color-default-white;
+
+    background-color: $color-alt-light-grey;
+
+    pointer-events: none;
+
+    @media (hover: hover) {
+      &:hover {
+        background-color: $color-alt-light-grey;
+      }
+    }
+
+    &:focus {
+      background-color: $color-alt-light-grey;
+    }
+
+    &:active {
+      background-color: $color-alt-light-grey;
+    }
+
+    & svg {
+      fill: $color-default-white;
+    }
+
+    @media (min-width: $vp-768) {
+      &.pagination__link--arrow {
         display: none;
       }
     }

@@ -48,6 +48,28 @@
     color: $color-default-white;
 
     background-color: $color-base-grey;
+
+    pointer-events: none;
+
+    @media (hover: hover) {
+      &:hover {
+        color: $color-default-white;
+
+        background-color: $color-base-grey;
+      }
+    }
+
+    &:focus {
+      color: $color-default-white;
+
+      background-color: $color-base-grey;
+    }
+
+    &:active {
+      color: $color-default-white;
+
+      background-color: $color-base-grey;
+    }
   }
 
   @media (hover: hover) {
@@ -68,5 +90,15 @@
     color: $color-default-white;
 
     background-color: $color-alt-primary-darker;
+  }
+
+  &:disabled {
+    color: $color-default-white;
+
+    background-color: $color-base-grey;
+
+    &.button--secondary {
+      background-color: $color-alt-light-grey;
+    }
   }
 }
