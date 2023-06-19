@@ -1,0 +1,270 @@
+.header {
+  @media (min-width: $vp-768) {
+    padding: 0 20px;
+  }
+}
+
+.header__nav.is-open {
+  border-bottom: 1px solid $color-base-secondary;
+
+  @media (min-width: $vp-768) {
+    border-bottom: none;
+  }
+}
+
+.header__nav {
+  position: relative;
+
+  display: flex;
+
+  @media (min-width: $vp-768) {
+    justify-content: space-between;
+  }
+}
+
+.header__logo-wrapper {
+  order: 1;
+  margin: 12px auto 0 20px;
+
+  @media (min-width: $vp-768) {
+    order: 0;
+    margin: 22px 0 0 0;
+  }
+
+  @media (min-width: $vp-1400) {
+    display: flex;
+
+    gap: 20px;
+  }
+}
+
+.header__logo img {
+  object-fit: initial;
+}
+
+.header__description {
+  display: none;
+
+  @media (min-width: $vp-1400) {
+    display: block;
+    margin: 2px 0 0 0;
+
+    font-size: 12px;
+    line-height: 1.33;
+  }
+}
+
+.header__site-menu {
+  order: 3;
+
+  @media (min-width: $vp-768) {
+    order: 0;
+  }
+}
+
+.is-open .header__site-menu-toggle {
+  &::after {
+    width: 12px;
+    height: 12px;
+
+    background-image: url("../../img/icons/stack.svg#close-menu");
+    background-size: 12px;
+    transform: translateX(-50%) translateY(-50%) rotate(180deg);
+  }
+}
+
+.header__site-menu-toggle {
+  position: relative;
+
+  padding: 30px;
+
+  background-color: $color-transparent;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: $vp-768) {
+    display: none;
+  }
+
+  &:active {
+    background-color: $color-base-secondary;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 16px;
+    height: 16px;
+
+    background-image: url("../../img/icons/stack.svg#open-menu");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px;
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+
+    transition: transform 600ms ease-in-out;
+  }
+}
+
+.is-open .header__site-menu-list {
+  display: block;
+
+  @media (min-width: $vp-768) {
+    display: flex;
+  }
+}
+
+.header__site-menu-list {
+  position: absolute;
+  top: calc(100% + 1px);
+  right: 0;
+  left: 0;
+
+  display: none;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  background-color: $color-default-white;
+
+  @media (min-width: $vp-768) {
+    position: static;
+
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 420px;
+  }
+
+  @media (min-width: $vp-1400) {
+    max-width: 550px;
+  }
+}
+
+.header__site-menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__site-menu-link {
+  padding: 20px 100%;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+
+  border-bottom: 1px solid $color-base-secondary;
+
+  @media (min-width: $vp-768) {
+    padding: 32px 20px;
+
+    border-bottom: none;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      color: $color-base-primary;
+    }
+  }
+
+  &:focus {
+    color: $color-base-primary;
+
+    outline: none;
+  }
+
+  &:active {
+    background-color: $color-base-secondary;
+
+    @media (min-width: $vp-768) {
+      color: $color-base-primary;
+    }
+  }
+
+  &--current {
+    @media (min-width: $vp-768) {
+      color: $color-base-primary;
+
+      border-bottom: 2px solid $color-base-primary;
+    }
+  }
+}
+
+.header__user-menu {
+  order: 2;
+
+  @media (min-width: $vp-768) {
+    order: 0;
+  }
+}
+
+.header__user-menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 180px;
+
+  @media (min-width: $vp-1400) {
+    max-width: 400px;
+  }
+}
+
+.header__user-menu-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__user-menu-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 22px;
+
+  @media (min-width: $vp-768) {
+    padding: 32px 22px;
+  }
+
+  @media (min-width: $vp-1400) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      color: $color-base-primary;
+    }
+  }
+
+  &:focus {
+    color: $color-base-primary;
+
+    outline: none;
+  }
+
+  &:active {
+    background-color: $color-base-secondary;
+  }
+}
+
+.header__user-menu-text {
+  display: none;
+
+  @media (min-width: $vp-1400) {
+    display: block;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.33;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+}
