@@ -10,8 +10,6 @@ const MARKER_SETUP = {
     isDraggable: false
 };
 
-const mapContainer = document.querySelector('#map');
-
 const createPin = (url) => {
   return L.icon({
     iconUrl: url,
@@ -36,8 +34,6 @@ function createMarker (lat, lng, url, isDraggable, type) {
 }
 
 const initMapModule = () => {
-  mapContainer.classList.remove('no-js')
-
   const map = L
     .map('map')
     .on('load')
@@ -52,7 +48,7 @@ const initMapModule = () => {
     .tileLayer(
       'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
       {
-       attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
       }
     )
     .addTo(map);

@@ -1,10 +1,10 @@
 const HANDLE_LOWER_ID = 0;
 const HANDLE_UPPER_ID = 1;
 
-const rangeContainer = document.querySelector('.range');
 const rangeBar = document.querySelector('.range__bar');
 const fieldMin = document.querySelector('#range-min');
 const fieldMax = document.querySelector('#range-max');
+const resetButton = document.querySelector('.filter__button-wrapper [type=reset]');
 
 const RangeBarSetup = {
   INIT_START_VALUE: fieldMin.value || Number(fieldMin.min),
@@ -69,15 +69,16 @@ const onRangeBarUpdate = ([startValue, endValue]) => {
 
 const onFieldValueChange = () => rangeBar.noUiSlider.set([fieldMin.value, fieldMax.value]);
 
-const initRangeBar = () => {
-  rangeContainer.classList.remove('no-js');
+const onResetButtonClick = () => rangeBar.noUiSlider.reset();
 
+const initRangeBar = () => {
   createRangeBar();
   checkDisabledStatus();
 
+  rangeBar.noUiSlider.on('update', onRangeBarUpdate);
   fieldMin.addEventListener('change', onFieldValueChange);
   fieldMax.addEventListener('change', onFieldValueChange);
-  rangeBar.noUiSlider.on('update', onRangeBarUpdate);
+  resetButton.addEventListener('click', onResetButtonClick);
 }
 
 export { initRangeBar };

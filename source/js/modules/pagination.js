@@ -52,13 +52,13 @@ const onPaginationButtonClick = (evt) => {
   }
 
   if (evt.target.closest('.pagination__link--arrow')) {
-    if (evt.currentTarget.id === 'prev-button' && currentPageNumber > 1) {
+    if (evt.currentTarget.id === 'prev-pagination-button' && currentPageNumber > 1) {
       setCurrentPage(currentPageNumber - 1);
 
       return
     }
 
-    if (evt.currentTarget.id === 'next-button' && currentPageNumber < pageCount) {
+    if (evt.currentTarget.id === 'next-pagination-button' && currentPageNumber < pageCount) {
       setCurrentPage(currentPageNumber + 1);
     }
   }
@@ -67,8 +67,7 @@ const onPaginationButtonClick = (evt) => {
 const initPagination = () => {
   setCurrentPage(currentPageNumber);
 
-  paginationButtons.forEach((button) => button.addEventListener('click', onPaginationButtonClick))
-
+  paginationButtons.forEach((button) => button.addEventListener('click', onPaginationButtonClick));
 }
 
 export { initPagination };

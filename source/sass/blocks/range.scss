@@ -35,9 +35,13 @@
 }
 
 .range__bar-target {
-  margin: 0 0 22px 0;
+  margin: 0 0 24px 0;
   padding: 0 24px 0 0;
   overflow: hidden;
+
+  @media (min-width: $vp-768) {
+    margin: 0 0 19px 0;
+  }
 }
 
 .range__bar-base {
@@ -179,7 +183,7 @@
 
 .range__field-input {
   width: 100%;
-  padding: 8px 10px;
+  padding: 6px;
 
   font-weight: 500;
   font-size: 16px;

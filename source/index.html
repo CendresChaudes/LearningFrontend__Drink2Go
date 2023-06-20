@@ -4,19 +4,30 @@
     <meta charset="UTF-8">
     <title>Drink2Go: главная страница</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/montserrat-regular.woff2" as="font">
+    <link rel="preload" href="fonts/montserrat-medium.woff2" as="font">
+    <link rel="preload" href="fonts/montserrat-semibold.woff2" as="font">
+    <link rel="preload" href="fonts/montserrat-bold.woff2" as="font">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nouislider@15.7.1/dist/nouislider.min.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
   </head>
-  <body>
+  <body class="no-js">
     <header class="header">
       <div class="header__nav">
         <div class="header__logo-wrapper">
           <a class="header__logo logo" href="#">
             <picture>
               <source media="(min-width: 1400px)" srcset="img/icons/stack.svg#logo-long" width="170" height="36">
-              <source media="(min-width: 768px)" srcset="img/icons/stack.svg#logo-medium" width="82" height="36">
+              <source media="(min-width: 768px)" srcset="img/icons/stack.svg#logo-medium" width="90" height="44">
               <img src="img/icons/stack.svg#logo-short" width="32" height="36" alt="Логотип интернет-магазина Drink2Go.">
             </picture>
           </a>
@@ -74,10 +85,10 @@
               <picture class="slider__picture">
                 <source type="image/webp" media="(min-width: 1400px)" srcset="img/content/hero/coffee-1-desktop.webp 1x, img/content/hero/coffee-1-desktop@2x.webp 2x" width="600" height="600">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/content/hero/coffee-1-tablet.webp 1x, img/content/hero/coffee-1-tablet@2x.webp 2x" width="476" height="476">
-                <source type="image/webp" srcset="img/content/hero/coffee-1-mobile.webp, img/content/hero/coffee-1-mobile@2x.webp 2x" width="280" height="280">
+                <source type="image/webp" srcset="img/content/hero/coffee-1-mobile.webp 1x, img/content/hero/coffee-1-mobile@2x.webp 2x" width="280" height="280">
                 <source media="(min-width: 1400px)" srcset="img/content/hero/coffee-1-desktop.png 1x, img/content/hero/coffee-1-desktop@2x.png 2x" width="600" height="600">
                 <source media="(min-width: 768px)" srcset="img/content/hero/coffee-1-tablet.png 1x, img/content/hero/coffee-1-tablet@2x.png 2x" width="476" height="476">
-                <img class="slider__img" src="img/content/hero/coffee-1-mobile.png" srcset="img/content/hero/coffee-1-mobile@2x.png 2x" width="280" height="280" alt="Банка с кофе Декаф Флэт Уайт.">
+                <img class="slider__img" src="img/content/hero/coffee-1-mobile.png" srcset="img/content/hero/coffee-1-mobile.png 1x, img/content/hero/coffee-1-mobile@2x.png 2x" width="280" height="280" alt="Банка с кофе Декаф Флэт Уайт.">
               </picture>
               <div class="slider__content-wrapper">
                 <span class="slider__badge badge">Новинка!</span>
@@ -98,10 +109,10 @@
               <picture class="slider__picture">
                 <source type="image/webp" media="(min-width: 1400px)" srcset="img/content/hero/coffee-2-desktop.webp 1x, img/content/hero/coffee-2-desktop@2x.webp 2x" width="600" height="600">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/content/hero/coffee-2-tablet.webp 1x, img/content/hero/coffee-2-tablet@2x.webp 2x" width="476" height="476">
-                <source type="image/webp" srcset="img/content/hero/coffee-2-mobile.webp, img/content/hero/coffee-2-mobile@2x.webp 2x" width="280" height="280">
+                <source type="image/webp" srcset="img/content/hero/coffee-2-mobile.webp 1x, img/content/hero/coffee-2-mobile@2x.webp 2x" width="280" height="280">
                 <source media="(min-width: 1400px)" srcset="img/content/hero/coffee-2-desktop.png 1x, img/content/hero/coffee-2-desktop@2x.png 2x" width="600" height="600">
                 <source media="(min-width: 768px)" srcset="img/content/hero/coffee-2-tablet.png 1x, img/content/hero/coffee-2-tablet@2x.png 2x" width="476" height="476">
-                <img class="slider__img" src="img/content/hero/coffee-2-mobile.png" srcset="img/content/hero/coffee-2-mobile@2x.png 2x" width="280" height="280" alt="Банка с кофе Лавандовый Латте.">
+                <img class="slider__img" src="img/content/hero/coffee-2-mobile.png" srcset="img/content/hero/coffee-2-mobile.png 1x, img/content/hero/coffee-2-mobile@2x.png 2x" width="280" height="280" alt="Банка с кофе Лавандовый Латте.">
               </picture>
               <div class="slider__content-wrapper">
                 <span class="slider__badge badge">Новинка!</span>
@@ -122,10 +133,10 @@
               <picture class="slider__picture">
                 <source type="image/webp" media="(min-width: 1400px)" srcset="img/content/hero/coffee-3-desktop.webp 1x, img/content/hero/coffee-3-desktop@2x.webp 2x" width="600" height="600">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/content/hero/coffee-3-tablet.webp 1x, img/content/hero/coffee-3-tablet@2x.webp 2x" width="476" height="476">
-                <source type="image/webp" srcset="img/content/hero/coffee-3-mobile.webp, img/content/hero/coffee-3-mobile@2x.webp 2x" width="280" height="280">
+                <source type="image/webp" srcset="img/content/hero/coffee-3-mobile.webp 1x, img/content/hero/coffee-3-mobile@2x.webp 2x" width="280" height="280">
                 <source media="(min-width: 1400px)" srcset="img/content/hero/coffee-3-desktop.png 1x, img/content/hero/coffee-3-desktop@2x.png 2x" width="600" height="600">
                 <source media="(min-width: 768px)" srcset="img/content/hero/coffee-3-tablet.png 1x, img/content/hero/coffee-3-tablet@2x.png 2x" width="476" height="476">
-                <img class="slider__img" src="img/content/hero/coffee-3-mobile.png" srcset="img/content/hero/coffee-3-mobile@2x.png 2x" width="280" height="280" alt="Банка с кофе Тройной Эспрессо.">
+                <img class="slider__img" src="img/content/hero/coffee-3-mobile.png" srcset="img/content/hero/coffee-3-mobile.png 1x, img/content/hero/coffee-3-mobile@2x.png 2x" width="280" height="280" alt="Банка с кофе Тройной Эспрессо.">
               </picture>
               <div class="slider__content-wrapper">
                 <span class="slider__badge badge">Новинка!</span>
@@ -194,7 +205,7 @@
             <form class="catalog__filter filter" method="get" action="https://echo.htmlacademy.ru/">
               <div class="filter__group">
                 <span class="filter__group-title">Цена</span>
-                <div class="filter__range range no-js">
+                <div class="filter__range range">
                   <div class="range__bar"></div>
                   <div class="range__field-wrapper">
                     <label class="range__field-label">
@@ -213,28 +224,28 @@
                 <ul class="filter__group-list">
                   <li class="filter__group-item">
                     <label class="filter__group-label filter__group-label--radio">
-                      <input class="filter__group-input visually-hidden" type="radio" name="milk" value="no-matter" checked>
+                      <input class="filter__group-input visually-hidden" type="radio" name="milk-type" value="no-matter" checked>
                       <span class="filter__group-mark-radio"></span>
                       <span class="filter__group-value">Неважно</span>
                     </label>
                   </li>
                   <li class="filter__group-item">
                     <label class="filter__group-label filter__group-label--radio">
-                      <input class="filter__group-input visually-hidden" type="radio" name="milk" value="only-animal">
+                      <input class="filter__group-input visually-hidden" type="radio" name="milk-type" value="only-animal">
                       <span class="filter__group-mark-radio"></span>
                       <span class="filter__group-value">Только животное</span>
                     </label>
                   </li>
                   <li class="filter__group-item">
                     <label class="filter__group-label filter__group-label--radio">
-                      <input class="filter__group-input visually-hidden" type="radio" name="milk" value="only-vegetable">
+                      <input class="filter__group-input visually-hidden" type="radio" name="milk-type" value="only-vegetable">
                       <span class="filter__group-mark-radio"></span>
                       <span class="filter__group-value">Только растительное</span>
                     </label>
                   </li>
                   <li class="filter__group-item">
                     <label class="filter__group-label filter__group-label--radio">
-                      <input class="filter__group-input visually-hidden" type="radio" name="milk" value="no-milk" disabled>
+                      <input class="filter__group-input visually-hidden" type="radio" name="milk-type" value="no-milk" disabled>
                       <span class="filter__group-mark-radio"></span>
                       <span class="filter__group-value">Без молока</span>
                     </label>
@@ -288,8 +299,8 @@
             </form>
           </div>
           <div class="catalog__body">
-            <div class="catalog__sort-container">
-              <div class="catalog__sort sort no-js">
+            <div class="catalog__sort sort">
+              <div class="sort__wrapper">
                 <span class="sort__text">Сортировка:</span>
                 <div class="sort__control-wrapper">
                   <button class="sort__control" type="button">По умолчанию</button>
@@ -319,8 +330,8 @@
                 <li class="catalog__card-item">
                   <a class="catalog__card-link" href="#">
                     <picture>
-                      <source type="image/webp" srcset="img/content/catalog/coffee-can-1.webp, img/content/catalog/coffee-can-1@2x.webp 2x" width="130" height="188">
-                      <img class="catalog__card-img" src="img/content/catalog/coffee-can-1.png" srcset="img/content/catalog/coffee-can-1@2x.png 2x" width="130" height="188" alt="Банка с кофе Декаф Флэт Уайт.">
+                      <source type="image/webp" srcset="img/content/catalog/coffee-can-1.webp 1x, img/content/catalog/coffee-can-1@2x.webp 2x" width="130" height="188">
+                      <img class="catalog__card-img" src="img/content/catalog/coffee-can-1.png" srcset="img/content/catalog/coffee-can-1.png 1x, img/content/catalog/coffee-can-1@2x.png 2x" width="130" height="188" alt="Банка с кофе Декаф Флэт Уайт.">
                     </picture>
                   </a>
                   <a class="catalog__card-link" href="#">
@@ -335,8 +346,8 @@
                 <li class="catalog__card-item">
                   <a class="catalog__card-link" href="#">
                     <picture>
-                      <source type="image/webp" srcset="img/content/catalog/coffee-can-2.webp, img/content/catalog/coffee-can-2@2x.webp 2x" width="130" height="188">
-                      <img class="catalog__card-img" src="img/content/catalog/coffee-can-2.png" srcset="img/content/catalog/coffee-can-2@2x.png 2x" width="130" height="188" alt="Банка с кофе Декаф Флэт Уайт.">
+                      <source type="image/webp" srcset="img/content/catalog/coffee-can-2.webp 1x, img/content/catalog/coffee-can-2@2x.webp 2x" width="130" height="188">
+                      <img class="catalog__card-img" src="img/content/catalog/coffee-can-2.png" srcset="img/content/catalog/coffee-can-2.png 1x, img/content/catalog/coffee-can-2@2x.png 2x" width="130" height="188" alt="Банка с кофе Декаф Флэт Уайт.">
                     </picture>
                   </a>
                   <a class="catalog__card-link" href="#">
@@ -351,8 +362,8 @@
                 <li class="catalog__card-item">
                   <a class="catalog__card-link" href="#">
                     <picture>
-                      <source type="image/webp" srcset="img/content/catalog/coffee-can-3.webp, img/content/catalog/coffee-can-3@2x.webp 2x" width="130" height="188">
-                      <img class="catalog__card-img" src="img/content/catalog/coffee-can-3.png" srcset="img/content/catalog/coffee-can-3@2x.png 2x" width="130" height="188" alt="Банка с кофе Декаф Флэт Уайт.">
+                      <source type="image/webp" srcset="img/content/catalog/coffee-can-3.webp 1x, img/content/catalog/coffee-can-3@2x.webp 2x" width="130" height="188">
+                      <img class="catalog__card-img" src="img/content/catalog/coffee-can-3.png" srcset="img/content/catalog/coffee-can-3.png 1x, img/content/catalog/coffee-can-3@2x.png 2x" width="130" height="188" alt="Банка с кофе Декаф Флэт Уайт.">
                     </picture>
                   </a>
                   <a class="catalog__card-link" href="#">
@@ -367,8 +378,8 @@
                 <li class="catalog__card-item">
                   <a class="catalog__card-link" href="#">
                     <picture>
-                      <source type="image/webp" srcset="img/content/catalog/coffee-can-4.webp, img/content/catalog/coffee-can-4@2x.webp 2x" width="130" height="188">
-                      <img class="catalog__card-img" src="img/content/catalog/coffee-can-4.png" srcset="img/content/catalog/coffee-can-4@2x.png 2x" width="130" height="188" alt="Банка с кофе Декаф Флэт Уайт.">
+                      <source type="image/webp" srcset="img/content/catalog/coffee-can-4.webp 1x, img/content/catalog/coffee-can-4@2x.webp 2x" width="130" height="188">
+                      <img class="catalog__card-img" src="img/content/catalog/coffee-can-4.png" srcset="img/content/catalog/coffee-can-4.png 1x, img/content/catalog/coffee-can-4@2x.png 2x" width="130" height="188" alt="Банка с кофе Декаф Флэт Уайт.">
                     </picture>
                   </a>
                   <a class="catalog__card-link" href="#">
@@ -383,8 +394,8 @@
                 <li class="catalog__card-item">
                   <a class="catalog__card-link" href="#">
                     <picture>
-                      <source type="image/webp" srcset="img/content/catalog/coffee-can-5.webp, img/content/catalog/coffee-can-5@2x.webp 2x" width="130" height="188">
-                      <img class="catalog__card-img" src="img/content/catalog/coffee-can-5.png" srcset="img/content/catalog/coffee-can-5@2x.png 2x" width="130" height="188" alt="Банка с кофе Декаф Флэт Уайт.">
+                      <source type="image/webp" srcset="img/content/catalog/coffee-can-5.webp 1x, img/content/catalog/coffee-can-5@2x.webp 2x" width="130" height="188">
+                      <img class="catalog__card-img" src="img/content/catalog/coffee-can-5.png" srcset="img/content/catalog/coffee-can-5.png 1x, img/content/catalog/coffee-can-5@2x.png 2x" width="130" height="188" alt="Банка с кофе Декаф Флэт Уайт.">
                     </picture>
                   </a>
                   <a class="catalog__card-link" href="#">
@@ -399,8 +410,8 @@
                 <li class="catalog__card-item">
                   <a class="catalog__card-link" href="#">
                     <picture>
-                      <source type="image/webp" srcset="img/content/catalog/coffee-can-6.webp, img/content/catalog/coffee-can-6@2x.webp 2x" width="130" height="188">
-                      <img class="catalog__card-img" src="img/content/catalog/coffee-can-6.png" srcset="img/content/catalog/coffee-can-6@2x.png 2x" width="130" height="188" alt="Банка с кофе Декаф Флэт Уайт.">
+                      <source type="image/webp" srcset="img/content/catalog/coffee-can-6.webp 1x, img/content/catalog/coffee-can-6@2x.webp 2x" width="130" height="188">
+                      <img class="catalog__card-img" src="img/content/catalog/coffee-can-6.png" srcset="img/content/catalog/coffee-can-6.png 1x, img/content/catalog/coffee-can-6@2x.png 2x" width="130" height="188" alt="Банка с кофе Декаф Флэт Уайт.">
                     </picture>
                   </a>
                   <a class="catalog__card-link" href="#">
@@ -445,13 +456,13 @@
         </div>
       </section>
 
-      <section class="map no-js" id="map">
+      <section class="map" id="map">
         <h2 class="visually-hidden">Карта расположения магазина.</h2>
         <picture>
           <source type="image/webp" media="(min-width: 1400px)" srcset="img/content/map/map-desktop.webp 1x, img/content/map/map-desktop@2x.webp 2x" width="1400" height="540">
           <source type="image/webp" media="(min-width: 768px)" srcset="img/content/map/map-tablet.webp 1x, img/content/map/map-tablet@2x.webp 2x" width="768" height="480">
-          <source type="image/webp" srcset="img/content/map/map-mobile.webp, img/content/map/map-mobile@2x.webp 2x" width="1400" height="540">
-          <source media="(min-width: 1400px)" srcset="img/content/map/map-desktop.jpg 1x, img/content/map/map-desktop@2x.jpg 2x" width="600" height="600">
+          <source type="image/webp" srcset="img/content/map/map-mobile.webp, img/content/map/map-mobile@2x.webp 2x" width="320" height="420">
+          <source media="(min-width: 1400px)" srcset="img/content/map/map-desktop.jpg 1x, img/content/map/map-desktop@2x.jpg 2x" width="1400" height="540">
           <source media="(min-width: 768px)" srcset="img/content/map/map-tablet.jpg 1x, img/content/map/map-tablet@2x.jpg 2x" width="768" height="480">
           <img class="map__fallback" src="img/content/map/map-mobile.jpg" srcset="img/content/map/map-mobile@2x.jpg 2x" width="320" height="420" alt="Адрес магазина: Санкт-Петербург, набережная реки Карповки, дом 5.">
         </picture>
@@ -465,7 +476,7 @@
             <a class="footer__logo logo" href="#">
               <picture>
                 <source media="(min-width: 768px)" srcset="img/icons/stack.svg#logo-long" width="170" height="36">
-                <img src="img/icons/stack.svg#logo-medium" width="82" height="36" alt="Логотип интернет-магазина Drink2Go.">
+                <img src="img/icons/stack.svg#logo-medium" width="90" height="44" alt="Логотип интернет-магазина Drink2Go.">
               </picture>
             </a>
             <p class="footer__description">Интернет-магазин кофейных напитков</p>

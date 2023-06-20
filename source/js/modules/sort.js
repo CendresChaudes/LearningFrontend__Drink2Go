@@ -26,8 +26,6 @@ const onDocumentClick = (evt) => {
 }
 
 const initSort = () => {
-  sortContainer.classList.remove('no-js');
-
   sortControl.addEventListener('click', onSortControlClick);
   sortList.addEventListener('change', onSortTypeChange);
   document.addEventListener('keydown', onDocumentEscKeydown);

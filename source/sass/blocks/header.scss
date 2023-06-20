@@ -2,6 +2,18 @@
   @media (min-width: $vp-768) {
     padding: 0 20px;
   }
+
+  @media (min-width: $vp-1400) {
+    width: 1360px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.no-js .header__nav {
+  @media (max-width: $vp-767) {
+    justify-content: space-between;
+  }
 }
 
 .header__nav {
@@ -11,6 +23,20 @@
 
   @media (min-width: $vp-768) {
     justify-content: space-between;
+  }
+
+  @media (min-width: $vp-1400) {
+    gap: 50px;
+  }
+}
+
+.no-js .header__logo-wrapper {
+  @media (max-width: $vp-767) {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+
+    margin: 0;
   }
 }
 
@@ -46,11 +72,25 @@
   }
 }
 
+.no-js .header__site-menu {
+  @media (max-width: $vp-767) {
+    order: 2;
+    width: 100%;
+    margin: 60px 0 0 0;
+  }
+}
+
 .header__site-menu {
   order: 3;
 
   @media (min-width: $vp-768) {
     order: 0;
+  }
+}
+
+.no-js .header__site-menu-toggle {
+  @media (max-width: $vp-767) {
+    display: none;
   }
 }
 
@@ -101,6 +141,14 @@
   }
 }
 
+.no-js .header__site-menu-list {
+  @media (max-width: $vp-767) {
+    position: static;
+
+    display: block;
+  }
+}
+
 .is-open .header__site-menu-list {
   display: block;
 
@@ -111,16 +159,16 @@
 
 .header__site-menu-list {
   position: absolute;
-  top: calc(100% + 1px);
+  top: 100%;
   right: 0;
   left: 0;
+  z-index: 99999;
 
   display: none;
   margin: 0;
   padding: 0;
 
   list-style: none;
-  z-index: 9999;
 
   background-color: $color-default-white;
   border-top: 1px solid $color-base-secondary;
@@ -131,11 +179,14 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 420px;
+
     border-top: none;
   }
 
   @media (min-width: $vp-1400) {
     max-width: 550px;
+
+    gap: 20px;
   }
 }
 
@@ -191,6 +242,14 @@
   }
 }
 
+.no-js .header__user-menu {
+  @media (max-width: $vp-767) {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
 .header__user-menu {
   order: 2;
 
@@ -205,7 +264,9 @@
   max-width: 180px;
 
   @media (min-width: $vp-1400) {
-    max-width: 400px;
+    max-width: 450px;
+
+    gap: 20px;
   }
 }
 
@@ -230,7 +291,7 @@
     justify-content: center;
     align-items: center;
 
-    gap: 8px;
+    gap: 5px;
   }
 
   @media (hover: hover) {

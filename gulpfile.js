@@ -56,13 +56,13 @@ export function processScripts () {
 }
 
 export function optimizeImages () {
-  return gulp.src('source/img/**/*.{png,jpg}')
+  return gulp.src(['source/img/**/*.{png,jpg}', '!source/img/favicons/*'])
     .pipe(gulpIf(!isDevelopment, squoosh()))
     .pipe(gulp.dest('build/img'))
 }
 
 export function createWebp () {
-  return gulp.src('source/img/**/*.{png,jpg}')
+  return gulp.src(['source/img/**/*.{png,jpg}', '!source/img/favicons/*'])
     .pipe(squoosh({
       webp: {}
     }))
@@ -70,7 +70,7 @@ export function createWebp () {
 }
 
 export function optimizeVector () {
-  return gulp.src(['source/img/**/*.svg', '!source/img/icons/**/*.svg'])
+  return gulp.src(['source/img/**/*.svg', '!source/img/icons/**/*.svg', '!source/img/favicons/*'])
     .pipe(svgo())
     .pipe(gulp.dest('build/img'));
 }
@@ -87,6 +87,8 @@ export function copyAssets () {
     'source/fonts/**/*.{woff2,woff}',
     'source/*.ico',
     'source/*.webmanifest',
+    'source/*.xml',
+    'source/img/favicons/*',
   ], {
     base: 'source'
   })
