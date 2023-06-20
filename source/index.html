@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>Drink2Go: главная страница</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/nouislider@15.7.1/dist/nouislider.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nouislider@15.7.1/dist/nouislider.min.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -67,11 +68,10 @@
       <h1 class="visually-hidden">Интернет-магазин кофейных напитков Drink2Go.</h1>
       <section class="hero">
         <h2 class="visually-hidden">Новинки кофейных напитков.</h2>
-        <span class="hero__badge badge">Новинка!</span>
         <div class="slider">
           <ul class="slider__list swiper-wrapper">
-            <li class="slider__item swiper-slide">
-              <picture>
+            <li class="slider__item slider__item--flat-white swiper-slide">
+              <picture class="slider__picture">
                 <source type="image/webp" media="(min-width: 1400px)" srcset="img/content/hero/coffee-1-desktop.webp 1x, img/content/hero/coffee-1-desktop@2x.webp 2x" width="600" height="600">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/content/hero/coffee-1-tablet.webp 1x, img/content/hero/coffee-1-tablet@2x.webp 2x" width="476" height="476">
                 <source type="image/webp" srcset="img/content/hero/coffee-1-mobile.webp, img/content/hero/coffee-1-mobile@2x.webp 2x" width="280" height="280">
@@ -79,18 +79,23 @@
                 <source media="(min-width: 768px)" srcset="img/content/hero/coffee-1-tablet.png 1x, img/content/hero/coffee-1-tablet@2x.png 2x" width="476" height="476">
                 <img class="slider__img" src="img/content/hero/coffee-1-mobile.png" srcset="img/content/hero/coffee-1-mobile@2x.png 2x" width="280" height="280" alt="Банка с кофе Декаф Флэт Уайт.">
               </picture>
-              <h3 class="slider__name">Декаф Флэт Уайт</h3>
-              <p class="slider__description">
-                Свежесваренный кофе без кофеина из&nbsp;Эфиопии с&nbsp;натуральным фермерским молоком&nbsp;&mdash; то, что нужно для расслабления после тяжёлого рабочего дня
-              </p>
-              <div class="slider__order-wrapper">
-                <span class="slider__old-price">295₽</span>
-                <span class="slider__new-price">225₽</span>
-                <a class="slider__button button button--primary" href="#">Заказать</a>
+              <div class="slider__content-wrapper">
+                <span class="slider__badge badge">Новинка!</span>
+                <h3 class="slider__name">Декаф Флэт Уайт</h3>
+                <p class="slider__description">
+                  Свежесваренный кофе без кофеина из&nbsp;Эфиопии с&nbsp;натуральным фермерским молоком&nbsp;&mdash; то, что нужно для&nbsp;расслабления после тяжёлого рабочего дня
+                </p>
+                <div class="slider__order-wrapper">
+                  <p class="slider__price-wrapper">
+                    <span class="slider__old-price">295₽</span>
+                    <span class="slider__new-price">225₽</span>
+                  </p>
+                  <a class="slider__button button button--primary" href="#">Заказать</a>
+                </div>
               </div>
             </li>
-            <li class="slider__item swiper-slide">
-              <picture>
+            <li class="slider__item slider__item--lavender-latte swiper-slide">
+              <picture class="slider__picture">
                 <source type="image/webp" media="(min-width: 1400px)" srcset="img/content/hero/coffee-2-desktop.webp 1x, img/content/hero/coffee-2-desktop@2x.webp 2x" width="600" height="600">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/content/hero/coffee-2-tablet.webp 1x, img/content/hero/coffee-2-tablet@2x.webp 2x" width="476" height="476">
                 <source type="image/webp" srcset="img/content/hero/coffee-2-mobile.webp, img/content/hero/coffee-2-mobile@2x.webp 2x" width="280" height="280">
@@ -98,18 +103,23 @@
                 <source media="(min-width: 768px)" srcset="img/content/hero/coffee-2-tablet.png 1x, img/content/hero/coffee-2-tablet@2x.png 2x" width="476" height="476">
                 <img class="slider__img" src="img/content/hero/coffee-2-mobile.png" srcset="img/content/hero/coffee-2-mobile@2x.png 2x" width="280" height="280" alt="Банка с кофе Лавандовый Латте.">
               </picture>
-              <h3 class="slider__name">Лавандовый Латте</h3>
-              <p class="slider__description">
-                Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор
-              </p>
-              <div class="slider__order-wrapper">
-                <span class="slider__old-price">285₽</span>
-                <span class="slider__new-price">265₽</span>
-                <a class="slider__button button button--primary" href="#">Заказать</a>
+              <div class="slider__content-wrapper">
+                <span class="slider__badge badge">Новинка!</span>
+                <h3 class="slider__name">Лавандовый Латте</h3>
+                <p class="slider__description">
+                  Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор
+                </p>
+                <div class="slider__order-wrapper">
+                  <p class="slider__price-wrapper">
+                    <span class="slider__old-price">285₽</span>
+                    <span class="slider__new-price">265₽</span>
+                  </p>
+                  <a class="slider__button button button--primary" href="#">Заказать</a>
+                </div>
               </div>
             </li>
-            <li class="slider__item swiper-slide">
-              <picture>
+            <li class="slider__item slider__item--espresso swiper-slide">
+              <picture class="slider__picture">
                 <source type="image/webp" media="(min-width: 1400px)" srcset="img/content/hero/coffee-3-desktop.webp 1x, img/content/hero/coffee-3-desktop@2x.webp 2x" width="600" height="600">
                 <source type="image/webp" media="(min-width: 768px)" srcset="img/content/hero/coffee-3-tablet.webp 1x, img/content/hero/coffee-3-tablet@2x.webp 2x" width="476" height="476">
                 <source type="image/webp" srcset="img/content/hero/coffee-3-mobile.webp, img/content/hero/coffee-3-mobile@2x.webp 2x" width="280" height="280">
@@ -117,31 +127,34 @@
                 <source media="(min-width: 768px)" srcset="img/content/hero/coffee-3-tablet.png 1x, img/content/hero/coffee-3-tablet@2x.png 2x" width="476" height="476">
                 <img class="slider__img" src="img/content/hero/coffee-3-mobile.png" srcset="img/content/hero/coffee-3-mobile@2x.png 2x" width="280" height="280" alt="Банка с кофе Тройной Эспрессо.">
               </picture>
-              <h3 class="slider__name">Тройной Эспрессо</h3>
-              <p class="slider__description">
-                Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость
-              </p>
-              <div class="slider__order-wrapper">
-                <span class="slider__old-price">395₽</span>
-                <span class="slider__new-price">375₽</span>
-                <a class="slider__button button button--primary" href="#">Заказать</a>
+              <div class="slider__content-wrapper">
+                <span class="slider__badge badge">Новинка!</span>
+                <h3 class="slider__name">Тройной Эспрессо</h3>
+                <p class="slider__description">
+                  Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость
+                </p>
+                <div class="slider__order-wrapper">
+                  <p class="slider__price-wrapper">
+                    <span class="slider__old-price">395₽</span>
+                    <span class="slider__new-price">375₽</span>
+                  </p>
+                  <a class="slider__button button button--primary" href="#">Заказать</a>
+                </div>
               </div>
             </li>
           </ul>
-          <div class="slider__buttons-wrapper">
-            <button class="slider__button slider__button--prev">
-              <svg aria-hidden="true" focusable="false" width="11" height="20" viewBox="0 0 11 20" fill="#7859cf">
-                <use xlink:href="img/icons/stack.svg#arrow-thin"></use>
-              </svg>
-              <span class="visually-hidden">Предыдущий слайд.</span>
-            </button>
-            <button class="slider__button slider__button--next">
-              <svg class="rotate" aria-hidden="true" focusable="false" width="11" height="20" viewBox="0 0 11 20" fill="#7859cf">
-                <use xlink:href="img/icons/stack.svg#arrow-thin"></use>
-              </svg>
-              <span class="visually-hidden">Следующий слайд.</span>
-            </button>
-          </div>
+          <button class="slider__arrow-button slider__arrow-button--prev" id="prev-hero-button">
+            <svg aria-hidden="true" focusable="false" width="11" height="20" viewBox="0 0 11 20" fill="#7859cf">
+              <use xlink:href="img/icons/stack.svg#arrow-thin"></use>
+            </svg>
+            <span class="visually-hidden">Предыдущий слайд.</span>
+          </button>
+          <button class="slider__arrow-button slider__arrow-button--next" id="next-hero-button">
+            <svg class="rotate" aria-hidden="true" focusable="false" width="11" height="20" viewBox="0 0 11 20" fill="#7859cf">
+              <use xlink:href="img/icons/stack.svg#arrow-thin"></use>
+            </svg>
+            <span class="visually-hidden">Следующий слайд.</span>
+          </button>
           <div class="slider__pagination"></div>
         </div>
       </section>
@@ -402,7 +415,7 @@
               </ul>
               <ul class="catalog__pagination pagination">
                 <li class="pagination__item">
-                  <a class="pagination__link pagination__link--arrow" id="prev-button" href="#">
+                  <a class="pagination__link pagination__link--arrow" id="prev-pagination-button" href="#">
                     <svg aria-hidden="true" focusable="false" width="6" height="10" viewBox="0 0 6 10" fill="#7859cf">
                       <use xlink:href="img/icons/stack.svg#arrow-thick"></use>
                     </svg>
@@ -419,7 +432,7 @@
                   <a class="pagination__link" href="#">3</a>
                 </li>
                 <li class="pagination__item">
-                  <a class="pagination__link pagination__link--arrow" id="next-button" href="#">
+                  <a class="pagination__link pagination__link--arrow" id="next-pagination-button" href="#">
                     <svg class="rotate" aria-hidden="true" focusable="false" width="6" height="10" viewBox="0 0 6 10" fill="#7859cf">
                       <use xlink:href="img/icons/stack.svg#arrow-thick"></use>
                     </svg>
@@ -544,6 +557,7 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/nouislider@15.7.1/dist/nouislider.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
     <script src="js/main.js" type="module"></script>

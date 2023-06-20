@@ -4,14 +4,6 @@
   }
 }
 
-.header__nav.is-open {
-  border-bottom: 1px solid $color-base-secondary;
-
-  @media (min-width: $vp-768) {
-    border-bottom: none;
-  }
-}
-
 .header__nav {
   position: relative;
 
@@ -128,8 +120,10 @@
   padding: 0;
 
   list-style: none;
+  z-index: 9999;
 
   background-color: $color-default-white;
+  border-top: 1px solid $color-base-secondary;
 
   @media (min-width: $vp-768) {
     position: static;
@@ -137,6 +131,7 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 420px;
+    border-top: none;
   }
 
   @media (min-width: $vp-1400) {

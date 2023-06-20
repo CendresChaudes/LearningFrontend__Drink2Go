@@ -1,5 +1,6 @@
 .sort {
   position: relative;
+
   display: flex;
   align-items: center;
 }
@@ -77,6 +78,7 @@
 
 .sort__list {
   position: absolute;
+  right: 0;
 
   display: none;
   margin: 10px 0 0 0;

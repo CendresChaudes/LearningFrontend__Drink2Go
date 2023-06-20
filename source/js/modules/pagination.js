@@ -1,7 +1,7 @@
 const paginationButtons = document.querySelectorAll('.pagination__link');
 const pageNumberButtons = document.querySelectorAll('.pagination__link:not(.pagination__link--arrow)');
-const nextButton = document.querySelector('#next-button');
-const prevButton = document.querySelector('#prev-button');
+const nextButton = document.querySelector('#next-pagination-button');
+const prevButton = document.querySelector('#prev-pagination-button');
 
 const pageCount = pageNumberButtons.length;
 let currentPageNumber = 2;
