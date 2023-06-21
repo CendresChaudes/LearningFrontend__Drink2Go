@@ -16,11 +16,6 @@ const initSlider = () => {
       bulletClass: 'slider__pagination-button',
       bulletActiveClass: 'slider__pagination-button--active',
       clickable: true
-    },
-
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: true
     }
   });
 };
