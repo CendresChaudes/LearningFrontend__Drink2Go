@@ -12,23 +12,17 @@
       border: 2px solid $color-base-grey;
 
       @media (hover: hover) {
-        &:hover {
-          &::after {
-            background-color: $color-default-white;
-          }
-        }
-      }
-
-      &:focus {
-        &::after {
+        &:hover::after {
           background-color: $color-default-white;
         }
       }
 
-      &:active {
-        &::after {
-          background-color: $color-default-white;
-        }
+      &:focus::after {
+        background-color: $color-default-white;
+      }
+
+      &:active::after {
+        background-color: $color-default-white;
       }
     }
   }
@@ -187,7 +181,7 @@
 
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.50;
+  line-height: 1.5;
   text-align: center;
 
   border: 2px solid $color-alt-primary-lighter;
