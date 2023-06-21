@@ -1,6 +1,5 @@
 const initSlider = () => {
   const swiper = new Swiper('.slider', {
-    // loop: true,
     grabCursor: true,
     slidesPerView: 1,
 
