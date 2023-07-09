@@ -14,4 +14,4 @@
 
 ---
 
-Ссылка на проект: [https://cendreschaudes.github.io/HTMLAcademy__Drink2Go/]
+Ссылка на проект: https://cendreschaudes.github.io/HTMLAcademy__Drink2Go/
