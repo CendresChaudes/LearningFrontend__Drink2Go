@@ -47,6 +47,7 @@
   }
 
   &:focus {
+    color: $color-default-white;
     background-color: $color-alt-primary-lighter;
 
     & svg {
