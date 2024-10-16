@@ -14,4 +14,4 @@
 
 ---
 
-Ссылка на деплой: https://cendreschaudes.github.io/HTMLAcademy__Drink2Go/
+Ссылка на деплой: https://cendreschaudes.github.io/LearningFrontend__Drink2Go/
